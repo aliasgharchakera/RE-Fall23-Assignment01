@@ -11,6 +11,7 @@
 \usepackage{lscape} %landscape table
 \usepackage{caption} %add a newline in the table caption
 \usepackage{subfig}
+\usepackage{float}
 
 \usepackage[
     backend=biber,  %references format (IEEE)
@@ -183,6 +184,18 @@ fossil fuels, which has led to increased greenhouse gas emissions, which has
 led to increased global warming and climate change.
 
 \section{Prevention of Global Warming and Climate Change}
+\begin{figure}[H]
+	\centering
+	\subfloat[Annual $CO_2$ Emissions]{\includegraphics[width=0.45\columnwidth]{annual.png}}
+	\qquad
+	\subfloat[Annual Changes in Renewable Energy generation]{\includegraphics[width=0.45\columnwidth]{renewable.png}}
+	\label{fig:Comparison}
+\end{figure}
+
+While we see an increasing trend in global $CO_2$ emissions, we also see a 
+glimpse of hope as the renewable energy generation is also increasing. This
+shows that we are moving in the right direction, but we need to do more to
+prevent global warming and climate change.
 \subsection{Renewable Energy}
 Renewable energy is energy that is collected from renewable resources, which
 are naturally replenished on a human timescale, such as sunlight, wind, rain,
@@ -223,6 +236,12 @@ largest contributors to greenhouse gas emissions in Pakistan, contributing a
 combined 89\% of the total greenhouse gas emissions. The rest of the emissions
 are contributed by the industrial processes, waste, and land-use sectors
 \cite{mir2017sectoral}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{annual_share.png}
+    \caption{Pakistan's Annual Share of Global $CO_2$ Emissions}
+    \label{fig:pak-emissions}
+\end{figure}
 
 \subsection{Effects of Global Warming}
 Although Pakistan contributes less than 1\% of the total global greenhouse gas
@@ -271,7 +290,7 @@ important ways to prevent global warming and climate change. Pakistan is one of
 the most vulnerable countries to the effects of global warming and climate
 change, and it needs to work with the rest of the world to prevent global
 warming and climate change.
-\newpage
+
 \printbibliography
 
 \end{document}
