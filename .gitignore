@@ -1,2 +1,11 @@
 /main.run.xml
 /main.synctex.gz
+*~
+~*
+*.aux
+*.out
+*.log
+*.pdf
+.DS_Store
+auto/
+*.synctex.gz
